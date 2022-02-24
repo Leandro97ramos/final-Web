@@ -1,0 +1,40 @@
+4.- Explique el patrón de diseño MVC. Describa cada una de sus partes y la responsabilidades de las mismas.
+    Ventajas y desventajas del uso de este patrón.
+
+El patron de diseño MVC separa las  responsabilidades del modelo , de la vista y de los controladores.
+
+VENTAJAS: 
+
+Esto facilita mucho la legibilidad  del codigo ya que separa sus responsabilidades, dando facilidad al mantenimiento y escalabilidad de nuestra app.
+Esto hace que sea mucho mas facil capturar un error en alguna parte de nuestra app, ya que se pueden llegar a realizar pruebas unitarias.
+Se puede llegar a reutilizar algunos componentes ahorrando en la cantidad de codigo escrito.
+
+Modelo: se encarga de gestionar , manipular y actualizar los datos de una Base de datos.
+
+Vista: se encarga de mostrarle al usuario la interfaz grafica como los elementos de pagina ( formularios, pantallas, ventanas, ) desde parametros enviados del controller.
+
+Controlador: es el responsable de toda la funcionalidad de la pagina, se encuentran los metodos y funciones  , ya que desde el router se accede , hace los procesos correspondiente.
+realiza peticiones al modelo y envia dichos datos a la vista (si es que debe hacerlo).
+
+
+DESVENTAJAS:
+
+dependiendo de el tamaño de la pagina puede llegar a ser inesesaria la aplicacion de el diseño mvc (paginas estaticas(sin base de datos o landing-page)).
+
+
+
+
+
+
+5.-Complete las siguientes frases:
+ 
+.-PDO es más seguro que conectarse a la base de datos porque evita lo que se llama inyección sql (poniendo una variable dentro de la sentencia sql).
+    con pdo se aclara donde va el valor con un '?' para despues utilizar la variable con execute(['$variable'])
+
+.-Si hay una sesión abierta no necesariamente hay un usuario logueado ya que si no se cierra la sesión correctamente (session_destroy()) esta quedaria permanentemente abierta.
+
+.-Al tener roles de usuario, no alcanza con ocultar los links en la vista porque con las herramientas de desarrollador(ctrl+shift+i) se podrian  desbloquear y manipular 
+
+.-Un password debe hashearse y no encriptarse porque hay metodos de desencriptar lo que podria poner en peligro la seguridad de la password.
+
+
